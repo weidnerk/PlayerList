@@ -13,13 +13,13 @@ export function AddPlayerForm({ onAdd }: AddPlayerFormProps) {
     team: '',
     position: '',
     number: '',
-    imageUrl: '',
+    image_url: '',
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onAdd(formData);
-    setFormData({ name: '', team: '', position: '', number: '', imageUrl: '' });
+    setFormData({ name: '', team: '', position: '', number: '', image_url: '' });
     setIsOpen(false);
   };
 
@@ -108,14 +108,14 @@ export function AddPlayerForm({ onAdd }: AddPlayerFormProps) {
         </div>
 
         <div>
-          <label htmlFor="imageUrl" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="image_url" className="block text-sm font-medium text-gray-700">
             Player Image URL (optional)
           </label>
           <input
             type="url"
-            id="imageUrl"
-            name="imageUrl"
-            value={formData.imageUrl}
+            id="image_url"
+            name="image_url"
+            value={formData.image_url}
             onChange={handleChange}
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
           />

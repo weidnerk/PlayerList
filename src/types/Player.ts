@@ -4,5 +4,5 @@ export interface Player {
   team: string;
   position: string;
   number: string;
-  imageUrl?: string;
+  image_url?: string;
 }

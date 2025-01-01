@@ -10,9 +10,9 @@ interface PlayerCardProps {
 export function PlayerCard({ player, onRemove }: PlayerCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 flex items-center gap-4">
-      {player.imageUrl ? (
+      {player.image_url ? (
         <img
-          src={player.imageUrl}
+          src={player.image_url}
           alt={player.name}
           className="w-16 h-16 rounded-full object-cover"
         />
